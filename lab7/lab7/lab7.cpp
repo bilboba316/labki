@@ -26,5 +26,23 @@ int main() {
 	apelsin.name = "apelsin";
 	apelsin.price = randomPrice();
 
+	product lemon;
+	lemon.category = "citrus";
+	lemon.name = "lemon";
+	lemon.price = randomPrice();
+
+	product apple;
+	apple.category = "fruit";
+	apple.name = "apple";
+	apple.price = randomPrice();
+
+	product cucumber;
+	cucumber.category = "vegetable";
+	cucumber.name = "cucumber";
+	cucumber.price = randomPrice();
+
 	apelsin.get_info();
+	apple.get_info();
+	lemon.get_info();
+	cucumber.get_info();
 }

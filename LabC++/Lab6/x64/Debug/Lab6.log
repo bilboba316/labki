@@ -1,2 +1,6 @@
 ﻿  Lab6.cpp
-  Lab6.vcxproj -> C:\Users\hello\source\repos\Lab6\x64\Debug\Lab6.exe
+C:\Users\hello\Documents\GitHub\labki\LabC++\Lab6\Lab6.cpp(31,6): error C2084: функция "void aboba(int [])" уже имеет текст реализации
+      C:\Users\hello\Documents\GitHub\labki\LabC++\Lab6\Lab6.cpp(7,6):
+      см. предыдущее определение "aboba"
+  
+C:\Users\hello\Documents\GitHub\labki\LabC++\Lab6\Lab6.cpp(32,14): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных

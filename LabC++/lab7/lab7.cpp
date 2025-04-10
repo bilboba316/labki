@@ -10,38 +10,26 @@ double randomPrice() {
 struct product {
 	string category;
 	string name;
-	double price;
+	double price = randomPrice();
 
 	void get_info() {
-		cout << category << endl;
-		cout << name << endl;
-		cout << price << endl;
-		cout << endl;
+		printf("Name: %s\n", name.c_str());
+		printf("Category: %s\n", category.c_str());
+		printf("Price: %.2f\n", price);
+		printf(".....\n");
 	}
 };
 
 int main() {
-	product apelsin;
-	apelsin.category = "citrus";
-	apelsin.name = "apelsin";
-	apelsin.price = randomPrice();
+	product appelsin{ "citrus", "appelsin" };
 
-	product lemon;
-	lemon.category = "citrus";
-	lemon.name = "lemon";
-	lemon.price = randomPrice();
+	product lemon{ "citrus", "lemon" };
 
-	product apple;
-	apple.category = "fruit";
-	apple.name = "apple";
-	apple.price = randomPrice();
+	product apple{ "fruit", "apple" };
 
-	product cucumber;
-	cucumber.category = "vegetable";
-	cucumber.name = "cucumber";
-	cucumber.price = randomPrice();
+	product cucumber{ "vegetable", "cucumber" };
 
-	apelsin.get_info();
+	appelsin.get_info();
 	apple.get_info();
 	lemon.get_info();
 	cucumber.get_info();

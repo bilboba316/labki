@@ -1,6 +1,4 @@
-#include <iostream>  
-#include <locale.h>
-#include <cstdlib> // Для rand()  
+#include <iostream>
 #define CRTDBG_MAP_ALLOC  
 #include <crtdbg.h>  
 #define DEBUG_NEW new(_NORMAL_BLOCK, __FILE__, __LINE__)  
@@ -10,7 +8,6 @@ using namespace std;
 
 int main()  
 {
-    setlocale(LC_ALL, "ukrainian");
 
    int size;  
    printf("Введіть розмір масиву: ");  
@@ -25,9 +22,6 @@ int main()
    {  
        cout << array[i] << " ";  
    }  
-
-   // Освобождение памяти  
-   delete[] array;  
 
    _CrtDumpMemoryLeaks();  
 }

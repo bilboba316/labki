@@ -10,7 +10,7 @@ double randomPrice() {
 struct product {
 	string category;
 	string name;
-	double price;
+	double price = randomPrice();
 
 	void get_info() {
 		printf("Name: %s\n", name.c_str());
@@ -26,16 +26,7 @@ product create_product(string category, string name) {
 }
 
 int main() {
-	product appelsin = create_product("fruit", "appelsin");
-
-	product lemon = create_product("fruit", "lemon");
-
-	product apple = create_product("fruit", "apple");
-
-	product cucumber = create_product("vegetable", "cucumber");
+	product appelsin{ "fruit", "appelsin" };
 
 	appelsin.get_info();
-	apple.get_info();
-	lemon.get_info();
-	cucumber.get_info();
 }

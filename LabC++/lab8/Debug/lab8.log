@@ -1,4 +1,4 @@
 ﻿  lab8.cpp
-C:\Users\hello\Documents\GitHub\labki\LabC++\lab8\lab8.cpp(20,17): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-C:\Users\hello\Documents\GitHub\labki\LabC++\lab8\lab8.cpp(25,17): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\hello\Documents\GitHub\labki\LabC++\lab8\lab8.cpp(25,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\hello\Documents\GitHub\labki\LabC++\lab8\lab8.cpp(26,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
   lab8.vcxproj -> C:\Users\hello\Documents\GitHub\labki\LabC++\Debug\lab8.exe

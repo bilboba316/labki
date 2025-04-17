@@ -1,27 +1,38 @@
-#include <iostream>
-#define CRTDBG_MAP_ALLOC  
-#include <crtdbg.h>  
-#define DEBUG_NEW new(_NORMAL_BLOCK, __FILE__, __LINE__)  
-#define new DEBUG_NEW  
+#include <iostream> 
 
 using namespace std;  
 
 int main()  
-{
-
+{  
    int size;  
-   printf("Введіть розмір масиву: ");  
+   cout << "Enter array size: ";  
    cin >> size;  
-   int* array = new int[size];  
+
+   if (size <= 0)  
+   {  
+       cout << "Размер массива должен быть положительным числом." << endl;  
+       return 1;  
+   }  
+
+   int* array = new int[size];
 
    for (int i = 0; i < size; i++)  
    {  
-       array[i] = rand() % 201 - 100;  
-   }  
-   for (int i = 0; i < size; i++)  
-   {  
-       cout << array[i] << " ";  
+       array[i] = rand() % 12;  
    }  
 
-   _CrtDumpMemoryLeaks();  
+   int graph[12] = {};  
+
+   for (int i = 0; i < size; i++)  
+   {  
+       graph[array[i]]++;  
+   }  
+
+   for (int i = 0; i < 12; i++)  
+   {  
+	   printf("number %d repeats %d times \n", i+1, graph[i]);
+   }  
+
+   delete[] array; // Освобождение памяти  
+   return 0;  
 }
